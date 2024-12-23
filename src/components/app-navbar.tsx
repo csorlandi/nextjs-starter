@@ -3,6 +3,8 @@
 import NextLink from 'next/link';
 import React from 'react';
 
+import { ThemeSwitcher } from './theme-switcher';
+
 import {
   Link,
   Navbar,
@@ -13,6 +15,7 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/react';
+import { IconPackage } from '@tabler/icons-react';
 
 export default function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -35,7 +38,8 @@ export default function AppNavbar() {
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand className="flex items-center gap-2">
+          <IconPackage />
           <p className="font-bold text-inherit">Next.js Starter</p>
         </NavbarBrand>
       </NavbarContent>
@@ -48,6 +52,9 @@ export default function AppNavbar() {
             </Link>
           </NavbarItem>
         ))}
+        <NavbarItem>
+          <ThemeSwitcher />
+        </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
@@ -57,6 +64,9 @@ export default function AppNavbar() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarMenuItem>
+          <ThemeSwitcher showLabel />
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );

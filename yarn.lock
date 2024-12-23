@@ -1315,7 +1315,7 @@
     "@nextui-org/shared-utils" "2.1.1"
     "@nextui-org/system-rsc" "2.3.4"
 
-"@nextui-org/switch@2.2.6":
+"@nextui-org/switch@2.2.6", "@nextui-org/switch@^2.2.6":
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/@nextui-org/switch/-/switch-2.2.6.tgz#7468d877f4b022fbcc40a5de7a83bd4b48fb7e98"
   integrity sha512-YlFOvc/WnkQeldTvtTUVF7KXx8LUz6sSJJoP+xhJZtPZcfcyQlApRTvc9LpVG+eyqfLWY9ng4n85BDR2rHzoOQ==
@@ -2524,6 +2524,18 @@
   integrity sha512-rx2XL9+v6wtOqLNJbD5eD8OezKlQD1BtC0WvvtHwBgK66jnF5+wGqtgkKK4Ygie1LVmoDClths2T4tdFmRvGrQ==
   dependencies:
     "@t3-oss/env-core" "0.11.1"
+
+"@tabler/icons-react@^3.26.0":
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.26.0.tgz#5db95a886f3766aefea6d94b729438dd0a8dd784"
+  integrity sha512-t18Zmu1ROktB7M8hWQ6vJw+mNpI/LPk5PPxLuE+kNB+4Zzf38GfETL8VF98inhzcfHohsggdROzMzwSAfjcAxw==
+  dependencies:
+    "@tabler/icons" "3.26.0"
+
+"@tabler/icons@3.26.0":
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.26.0.tgz#7a23b2a99abda32e3b4cf00ce46dddaa5daa1923"
+  integrity sha512-oO3D4ss+DxzxqU1aDy0f1HmToyrO0gcQWIMpzHAfV1quPUx0BZYvNm5xz1DQb4DxNm/+xNvbBGLJy4pzTLYWag==
 
 "@tanstack/react-virtual@3.10.9":
   version "3.10.9"
@@ -4756,6 +4768,11 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
+
+next-themes@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.4.tgz#ce6f68a4af543821bbc4755b59c0d3ced55c2d13"
+  integrity sha512-LDQ2qIOJF0VnuVrrMSMLrWGjRMkq+0mpgl6e0juCLqdJ+oo8Q84JRWT6Wh11VDQKkMMe+dVzDKLWs5n87T+PkQ==
 
 next@15.1.2:
   version "15.1.2"
