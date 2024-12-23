@@ -28,11 +28,13 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen antialiased`}
       >
         <Providers>
           <AppNavbar />
-          {children}
+          <main className="grow overflow-auto bg-[url(/light-bg.svg)] bg-repeat dark:bg-[url(/dark-bg.svg)]">
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

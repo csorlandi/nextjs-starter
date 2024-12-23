@@ -5,7 +5,7 @@ export default function Providers({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <NextUIProvider>
+    <NextUIProvider className="flex size-full flex-col">
       <NextThemesProvider attribute="class">{children}</NextThemesProvider>
     </NextUIProvider>
   );

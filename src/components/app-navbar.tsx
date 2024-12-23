@@ -44,7 +44,7 @@ export default function AppNavbar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         {menuItems.map((item) => (
           <NavbarItem key={item.href}>
             <Link as={NextLink} color="foreground" href={item.href}>
