@@ -3,6 +3,7 @@
 import NextLink from 'next/link';
 import React from 'react';
 
+import AuthButton from './auth-button';
 import { ThemeSwitcher } from './theme-switcher';
 
 import {
@@ -55,6 +56,9 @@ export default function AppNavbar() {
         <NavbarItem>
           <ThemeSwitcher />
         </NavbarItem>
+        <NavbarItem>
+          <AuthButton minimal={false} />
+        </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
@@ -66,6 +70,9 @@ export default function AppNavbar() {
         ))}
         <NavbarMenuItem>
           <ThemeSwitcher showLabel />
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <AuthButton />
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
