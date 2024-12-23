@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import useSystemTheme from '@/hooks/use-system-theme';
 
-import { Switch } from '@nextui-org/switch';
+import { Switch } from '@nextui-org/react';
 import { IconMoon, IconSun } from '@tabler/icons-react';
 
 export function ThemeSwitcher({ showLabel = false }: { showLabel?: boolean }) {
