@@ -44,10 +44,12 @@ export default function AppNavbar() {
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className="sm:hidden"
         />
-        <NavbarBrand className="flex items-center gap-2">
-          <IconPackage />
-          <p className="font-bold text-inherit">Next.js Starter</p>
-        </NavbarBrand>
+        <NextLink href="/">
+          <NavbarBrand className="flex items-center gap-2">
+            <IconPackage />
+            <p className="font-bold text-inherit">Next.js Starter</p>
+          </NavbarBrand>
+        </NextLink>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
