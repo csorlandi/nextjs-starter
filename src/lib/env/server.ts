@@ -8,6 +8,8 @@ export const env = createEnv({
       .default('development'),
     GOOGLE_CLIENT_ID: z.string(),
     GOOGLE_CLIENT_SECRET: z.string(),
+    NEXTAUTH_URL: z.string().url(),
+    NEXTAUTH_SECRET: z.string(),
   },
 
   // eslint-disable-next-line n/no-process-env

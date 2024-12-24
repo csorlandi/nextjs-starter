@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { Suspense } from 'react';
 
 import AppNavbar from '@/components/app-navbar';
 import Providers from '@/components/providers';
@@ -33,7 +34,7 @@ export default function RootLayout({
         <Providers>
           <AppNavbar />
           <main className="grow overflow-auto bg-[url(/light-bg.svg)] bg-repeat dark:bg-[url(/dark-bg.svg)]">
-            {children}
+            <Suspense>{children}</Suspense>
           </main>
         </Providers>
       </body>
