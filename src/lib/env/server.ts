@@ -10,6 +10,12 @@ export const env = createEnv({
     GOOGLE_CLIENT_SECRET: z.string(),
     NEXTAUTH_URL: z.string().url(),
     NEXTAUTH_SECRET: z.string(),
+    DATABASE_HOST: z.string(),
+    DATABASE_USER: z.string(),
+    DATABASE_PASSWORD: z.string(),
+    DATABASE_NAME: z.string(),
+    DATABASE_PORT: z.coerce.number(),
+    DATABASE_URL: z.string().url(),
   },
 
   // eslint-disable-next-line n/no-process-env
