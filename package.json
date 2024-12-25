@@ -22,7 +22,8 @@
     "format:check": "prettier . --check",
     "format:ci": "prettier --list-different .",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "yarn db:generate && drizzle-kit migrate"
+    "db:migrate": "yarn db:generate && drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
