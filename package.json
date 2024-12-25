@@ -20,7 +20,9 @@
     "lint:fix": "eslint \"src/**/*.+(ts|js|tsx)\" --fix",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "format:ci": "prettier --list-different ."
+    "format:ci": "prettier --list-different .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "yarn db:generate && drizzle-kit migrate"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -29,10 +31,12 @@
     ]
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.7.4",
     "@nextui-org/react": "^2.6.8",
     "@t3-oss/env-nextjs": "^0.11.1",
     "@tabler/icons-react": "^3.26.0",
     "dotenv": "^16.4.7",
+    "dotenv-expand": "^12.0.1",
     "drizzle-orm": "^0.38.2",
     "framer-motion": "^11.15.0",
     "next": "15.1.2",
