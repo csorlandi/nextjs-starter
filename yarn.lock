@@ -3753,6 +3753,11 @@ drizzle-orm@^0.38.2:
   resolved "https://registry.yarnpkg.com/drizzle-orm/-/drizzle-orm-0.38.2.tgz#11cfaa6f17d9d7736306334de17615456b63ae84"
   integrity sha512-eCE3yPRAskLo1WpM9OHpFaM70tBEDsWhwR/0M3CKyztAXKR9Qs3asZlcJOEliIcUSg8GuwrlY0dmYDgmm6y5GQ==
 
+drizzle-zod@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/drizzle-zod/-/drizzle-zod-0.6.1.tgz#2024a9ece75f27748c7a71ee48a094ee1957fd90"
+  integrity sha512-huEbUgnsuR8tupnmLiyB2F1I2H9dswI3GfM36IbIqx9i0YUeYjRsDpJVyFVeziUvI1ogT9JHRL2Q03cC4QmvxA==
+
 dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz"
