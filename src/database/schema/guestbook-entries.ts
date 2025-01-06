@@ -4,6 +4,7 @@ import { pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-zod';
 
 const guestbookEntries = pgTable('guestbook_entries', {
+  id: uuid('id').primaryKey().defaultRandom(),
   userId: uuid('userId')
     .notNull()
     .references(() => users.id, { onDelete: 'cascade' }),
