@@ -1,5 +1,6 @@
 import users from './users';
 
+import { relations } from 'drizzle-orm';
 import { pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { createInsertSchema } from 'drizzle-zod';
 
@@ -11,6 +12,16 @@ const guestbookEntries = pgTable('guestbook_entries', {
   message: text('message').notNull(),
   createdAt: timestamp('created_at', { mode: 'date' }).notNull().defaultNow(),
 });
+
+export const guestbookEntriesRelations = relations(
+  guestbookEntries,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [guestbookEntries.userId],
+      references: [users.id],
+    }),
+  })
+);
 
 export const InsertGuestbookEntrySchema = createInsertSchema(
   guestbookEntries
