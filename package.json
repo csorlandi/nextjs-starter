@@ -14,6 +14,7 @@
     "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
+    "build:prod": "yarn db:migrate && yarn build",
     "start": "next start",
     "type-check": "tsc --noEmit",
     "lint": "eslint \"src/**/*.+(ts|js|tsx)\"",
